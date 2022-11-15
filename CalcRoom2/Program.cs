@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CalcRoom // area cost calculation.-average flooring team can only put in 20 square feet of flooring per hour at a cost of $86.00/hr 
+namespace CalcRoom //average flooring team can only put in 20 square feet of flooring per hour at a cost of $86.00/hr 
 {
     class CalcRoom
     {
