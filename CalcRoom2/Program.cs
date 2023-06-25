@@ -27,12 +27,13 @@ namespace CalcRoom2
             Console.Write("Enter diameter of room in feet: ");
             double diameter = Convert.ToDouble(Console.ReadLine());
             double pi = Math.PI;
-            double area = diameter * pi;
+            double radius = (diameter / 2);
+            double area = radius * pi;
             Console.Write("Enter price of square feet: ");
             double price = Convert.ToDouble(Console.ReadLine());
-            double cost = (pi * diameter) * price;
+            double cost = area * price;
             Console.WriteLine($"Floor is {area} square feet.");
-            Console.WriteLine($"Cost for room is {cost} .");
+            Console.WriteLine($"Cost for room is {cost}.");
             Console.ReadLine();
         }
         //average flooring team can only put in 20 square feet of flooring per hour at a cost of $86.00/hr
