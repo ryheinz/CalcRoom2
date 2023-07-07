@@ -10,17 +10,17 @@ namespace CalcRoom2
     {
         public static void Main()
         //user question to get room shape
-        bool answerY = true;
+        
         {
             Console.WriteLine("Welcome to the Room CALC2! ");
             Console.Write("Do you want to get cost for a square room? Please enter Y for Yes or N for No. ");
-            bool answerY = Convert.ToDouble(Console.ReadLine());
+            bool answer = (Console.ReadLine();
 
-            Console.ReadLine();
+         
         }
         
 
-        If(answerY = true)// Square room:
+        if (answer == "Y")// Square room:
 
         {
             Console.Write("Enter length of room in feet: ");
@@ -39,7 +39,7 @@ namespace CalcRoom2
             Console.ReadLine();
 
         }
-        Else(answerY = false)
+        else (answer == "N")
         // Circular room:
         {
             Console.Write("Enter diameter of room in feet: ");
