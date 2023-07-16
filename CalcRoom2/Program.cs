@@ -12,18 +12,18 @@ namespace CalcRoom2
     class CalcRoom
     {
         public static void Main()
-        {  //user question to get room shape
-            string roomShape;
+        //user question to get room shape
+        bool answerY = true;
+        {
+            Console.WriteLine("Welcome to the Room CALC2! ");
+            Console.Write("Do you want to get cost for a square room? Please enter Y for Yes or N for No. ");
+            bool answerY = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Welcome to the Room CALC2! ");
             Console.ReadLine();
+        }
+        
 
-            Console.Write("Which room shape do you want to calculate? Enter R (ectangle) or C (ircle) ");
-
-            Console.ReadLine();
-
-
-            if (roomShape == "R")// Square room:
+        If(answerY = true)// Square room:
 
             {
                 Console.Write("Enter length of room in feet: ");
@@ -41,14 +41,14 @@ namespace CalcRoom2
                 Console.WriteLine($"Cost for room is {cost} .");
                 Console.ReadLine();
 
-            }
-            else (roomShape == "C") // Circular room:
-
-            {
-                Console.Write("Enter diameter of room in feet: ");
-                double diameter = Convert.ToDouble(Console.ReadLine());
-                double radius = (diameter / 2);
-                double area = Math.Round(radius * Math.PI, 2);
+        }
+        Else(answerY = false)
+        // Circular room:
+        {
+            Console.Write("Enter diameter of room in feet: ");
+            double diameter = Convert.ToDouble(Console.ReadLine());
+            double radius = (diameter / 2);
+            double area = Math.Round(radius * Math.PI, 2);
 
                 Console.Write("Enter price of square feet: ");
                 double price = Convert.ToDouble(Console.ReadLine());
