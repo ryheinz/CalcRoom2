@@ -3,28 +3,20 @@
 //average flooring team can only put in 20
 //square feet of flooring per hour at a cost of $86.00/hr
 
-
 using System;
-
 
 namespace CalcRoom2
 {
     class CalcRoom
     {
-        public static void Main()
-        {  //user question to get room shape
-            string roomShape;
-
+        public static void Main()//user question to get room shape
+        {  
             Console.Write("Welcome to the Room CALC2! ");
-
-
             Console.Write("Which room shape you wanna calculate. Enter R (ectangle) or C (ircle) ");
-
-            Console.ReadLine();
+            string roomShape = Console.ReadLine();
 
 
             if (roomShape == "R")// Square room:
-
             {
                 Console.Write("Enter length of room in feet: ");
                 double length = Convert.ToDouble(Console.ReadLine());
@@ -42,8 +34,7 @@ namespace CalcRoom2
                 Console.ReadLine();
 
             }
-            else (roomShape == "C") // Circular room:
-
+            if (roomShape == "C") // Circular room:
             {
                 Console.Write("Enter diameter of room in feet: ");
                 double diameter = Convert.ToDouble(Console.ReadLine());
